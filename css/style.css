@@ -1,0 +1,66 @@
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+ :root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: var(--Light-grayish-blue);
+}
+
+h2,
+span {
+    font-size: 16px !important;
+}
+
+span {
+    opacity: .5;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+}
+
+.person p:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.person p:nth-child(3) {
+    opacity: .75;
+}
+
+.left div:nth-child(1) .person {
+    background-color: var(--Moderate-violet);
+    color: var(--White);
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% top;
+}
+
+.left div:nth-child(2) .person {
+    background-color: var(--Very-dark-grayish-blue);
+    color: var(--White);
+}
+
+.left div:nth-child(3) .person {
+    background-color: var(--Very-dark-blackish-blue);
+    color: var(--White);
+}
+
+.left div:nth-child(4) .person,
+.right .person {
+    background-color: var(--White);
+    color: var(--Very-dark-grayish-blue);
+}
